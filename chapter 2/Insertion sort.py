@@ -2,7 +2,7 @@
 
 '''increasing order'''
 def insertion_sort(x):
-    if type(x) == int:
+    if type(x) == int:              #如果输入是数字，则转为列表
         x = list(str(x))
 
     for j in range(1,len(x)):
