@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-：
 
+import random
+
 '''increasing order'''
 def insertion_sort(x):
     if type(x) == int:              #如果输入是数字，则转为列表
@@ -17,5 +19,7 @@ def insertion_sort(x):
     return x
 
 
-print(insertion_sort([31,41,59,26,41,58]))
-print(insertion_sort(123654))
+random_list = list(random.randint(1, 99) for i in range(100))
+
+print('before sort:\n', random_list)
+print('after sort:\n', insertion_sort(random_list))
